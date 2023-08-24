@@ -12,9 +12,12 @@ while this image shows an example of the database that has been connected to the
 
 The SQL code required to build a table for storing the commands is as follows.
 
+``` 
 CREATE TABLE `commands` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `command` varchar(255) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ ```
+
